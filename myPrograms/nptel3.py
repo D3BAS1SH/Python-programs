@@ -1,6 +1,7 @@
-def g(m,n):
-    res = 0
-    while m >= n:
-        (res,m) = (res+1,m/n)
-    return(res)
-print(g(375,4))
+def mys(m):
+    if m == 1:
+        return(1)
+    else:
+        return(m*mys(m-1))
+
+print(mys(-4))
