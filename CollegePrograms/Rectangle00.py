@@ -16,7 +16,7 @@ class Rectangle:
     pass
 
 """ RectList=[Rectangle(10,20),Rectangle(5,4),Rectangle(3,8),Rectangle(1.5,20),Rectangle(70,0.3),Rectangle(10,20)] """
-RectList=[]
+""" RectList=[]
 
 num=int(input("Number of Rectangles you want to give : "))
 print("\nNow Give the values by the following Instruction.\n")
@@ -33,4 +33,4 @@ newSortedList=sorted(RectList,key=lambda obj : obj.getArea())
 print()
 for x in newSortedList:
     x.showStats()
-    print()
+    print() """
