@@ -12,6 +12,7 @@ class Rectangle:
     def getPerimeter(self):
         return (self.getLength()+self.getWidth())*2
     def showStats(self):
+        print()
         print(f"Length : {self.getLength()}, Width : {self.getWidth()}\nArea : {self.getArea()}, Perimeter : {self.getPerimeter()}")
     pass
 

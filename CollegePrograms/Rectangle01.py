@@ -44,7 +44,7 @@ while(ShallContinue):
                 x.showStats()
         case 4:
             PerSort=sorted(RectList,key=lambda obj : obj.getPerimeter())
-            for x in WidSort:
+            for x in PerSort:
                 x.showStats()
         case 5:
             ShallContinue=False
