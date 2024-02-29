@@ -1,16 +1,16 @@
 from gtts import gTTS
 from playsound import playsound
 
-myText='Say my name'
+myText='Fuck, Say my name'
 text = "यह हिंदी में पाठ है।"  # Hindi text
-language = 'hi'
+language = 'en'
 
 
 # language='en'
 
-myTextSpeech=gTTS(text=text,lang=language,slow=False)
+myTextSpeech=gTTS(text=myText,lang=language,slow=False)
 
-myTextSpeech.save('./TestHindiSpeech.mp3')
+myTextSpeech.save('TestEngSpeech.mp3')
 
-playsound('TestHindiSpeech.mp3')
+playsound('TestEngSpeech.mp3')
 print('playing sound using  playsound')
