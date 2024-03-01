@@ -8,4 +8,3 @@ for x in range(start,End+1):
             sum+=y
     if(sum==x):
         print(int(x),end=', ')
-
