@@ -47,7 +47,24 @@ def AddRecords():
 # Delete Records from a file
 def DeleteRecords():
     ShowRecords()
-    
+    WhichRecord=(input("Give the Roll Number you want to Delete : "))
+    updateRec=[]
+    with open(f'{FILE_NAME}.txt','r+') as F:
+        AllRecs=F.readlines()
+        print(AllRecs)
+        for x in AllRecs:
+            print("X :",x)
+            myObj=x.strip().split(',')
+            print("MyObj :",myObj)
+            if(myObj[1]==WhichRecord):
+                continue
+            else:
+                updateRec.append(f"{myObj[0]},{myObj[1]},{myObj[2]}\n")
+    F.close()
+    print(updateRec)
+    with open(f"{FILE_NAME}.txt",'w') as V:
+        V.writelines(updateRec)
+    V.close()
     return
 
 # Update Records from a file
