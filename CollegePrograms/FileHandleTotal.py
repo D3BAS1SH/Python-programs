@@ -1,4 +1,3 @@
-File=None
 Fname=''
 Exit=False
 def Options():
@@ -16,14 +15,14 @@ def GeChoice():
     return x
 
 def CreateFile():
-    global File,Fname
+    global Fname
     Fname = input("File Name (You don't need to add .txt at the end.) : ")
     try:
         File = open(f"./{Fname}.txt",'a+')
     except Exception as E:
         print("File Creation : Failed.\nReason :",E)
     print("File Creation : Success")
-    #File.close()
+    File.close()
 
 def AddFriendInfo():
     name=input("Friend Name : ")
