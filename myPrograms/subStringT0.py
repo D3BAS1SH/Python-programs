@@ -1,0 +1,5 @@
+STRING="THE QUICK BROWN FOX"
+
+print(STRING[0:3])
+print(STRING[4:9])
+print(STRING[1:9:2])
