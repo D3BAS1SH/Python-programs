@@ -1,0 +1,1 @@
+#Given a matrix generate another matrix that every element will be the sum of it's neighbors.
