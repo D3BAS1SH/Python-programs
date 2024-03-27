@@ -1,1 +1,1 @@
-pass
+len(Val)-1
