@@ -3,6 +3,7 @@ import matplotlib.pyplot as ply
 CityTemp={
     "A":(10,31),
     "B":(-6,15),
+    "C":(3,40),
 }
 
 CityName=CityTemp.keys()
