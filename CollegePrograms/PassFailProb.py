@@ -30,12 +30,15 @@ mySubjects=[
     "COA"
 ]
 
-PL.subplot(2,1,1)
+PL.subplot(2,2,1)
 PL.bar(["atleastPass1","atleastPass2","allPass","allFail"],[atleastPass1,atleastPass2,allPass,allFail],width=0.5)
 PL.grid(True,axis='y')
 
-PL.subplot(2,1,2)
+PL.subplot(2,2,3)
 PL.bar(mySubjects,mySubjectData,width=0.5)
 PL.grid(True,axis='y')
+
+PL.subplot(2,2,4)
+PL.pie([mySubjectData[0],len(Data.keys())-mySubjectData[0]],explode=[0.02,0],autopct='%1.1f%%')
 
 PL.show()
