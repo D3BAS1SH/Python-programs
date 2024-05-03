@@ -1,0 +1,4 @@
+Anisha ,F,15
+Priyanka Patro,F,18
+Hitesh ,M,10
+Debasish Sahu,M,19
